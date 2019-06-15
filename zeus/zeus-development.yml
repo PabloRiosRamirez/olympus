@@ -1,0 +1,46 @@
+---
+# This default profile is used when running a single instance completely standalone:
+spring:
+  profiles:
+    active: default
+server:
+  port: 8010
+eureka:
+  instance:
+    hostname: zeus.grisk.online
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}/eureka/
+---
+# primary, secondary and tertiary illustrate running 3 intercommuning intances.
+# java -jar -Dspring.profiles.active=primary zeus-0.0.1.alpha.jar
+# java -jar -Dspring.profiles.active=secondary zeus-0.0.1.alpha.jar
+# java -jar -Dspring.profiles.active=tertiary zeus-0.0.1.alpha.jar
+---
+spring:
+  profiles: primary
+server:
+  port: 8011
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+---
+spring:
+  profiles: secondary
+server:
+  port: 8012
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+---
+spring:
+  profiles: tertiary
+server:
+  port: 8013
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+

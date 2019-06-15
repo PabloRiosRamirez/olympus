@@ -1,0 +1,6 @@
+eureka:
+  instance:
+    hostname: zeus.grisk.online
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}/eureka/
