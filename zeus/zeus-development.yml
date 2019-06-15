@@ -10,7 +10,7 @@ eureka:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 ---
 # primary, secondary and tertiary illustrate running 3 intercommuning intances.
 # java -jar -Dspring.profiles.active=primary zeus-0.0.1.alpha.jar
