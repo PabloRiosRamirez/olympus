@@ -1,3 +1,7 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
 spring:
   jpa:
     properties:
@@ -5,4 +9,3 @@ spring:
         jdbc:
           lob:
             non_contextual_creation:  true
-
