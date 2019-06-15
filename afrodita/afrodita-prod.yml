@@ -7,3 +7,7 @@ spring:
     password: '{cipher}6e540d48944d18ff2403524a5a55697d85a54488be4c65d29f873c999541d26b'
     platform: '{cipher}115ff7e253a52f8d4748aa1556923e7f91aa7f0dfd7843192c67979ca402eceb'
     driver-class-name: '{cipher}ff45a9936c9bf89360a0a10e1868467873a5a2eaf9c4aceefd184ec013adf3a603b7ffe9d5b835c90ca49aedbf81c326'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://zeus.grisk.online/eureka/
