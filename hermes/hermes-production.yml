@@ -4,3 +4,4 @@ eureka:
       defaultZone: http://zeus.grisk.online/eureka/
   instance:
     hostname: hermes.herokuapp.com
+    nonSecurePort: 80
