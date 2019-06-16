@@ -1,16 +1,3 @@
-eureka:
-  instance:
-    hostname: www.grisk.online
-    nonSecurePort: 80
-    home-page-url: http://www.grisk.online
-  client:
-    serviceUrl:
-      defaultZone: http://zeus.grisk.online/eureka/
-    allow-redirects: true
-management:
-  health:
-    ldap:
-      enabled: false
 spring:
   jpa:
     database: '{cipher}2e1d431be3c0244d79a2819292a9596346a49f9f58ffc49e7bdca5e890d5abe7'
