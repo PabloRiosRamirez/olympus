@@ -1,4 +1,3 @@
-hibernate: trace
 eureka:
   instance:
     hostname: www.grisk.online
