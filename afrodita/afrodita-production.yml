@@ -1,7 +1,12 @@
+hibernate: trace
 eureka:
   instance:
     hostname: www.grisk.online
     home-page-url: http://www.grisk.online
+    non-secure-port-enabled: true
+    non-secure-port: 8092
+    secure-port-enabled: true
+    secure-port: 7777
   client:
     serviceUrl:
       defaultZone: http://zeus.grisk.online/eureka/
