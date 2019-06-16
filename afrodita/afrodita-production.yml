@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: ${vcap.application.uris[0]}
+    hostname: www.grisk.online
     nonSecurePort: 80
     home-page-url: http://www.grisk.online
   client:
