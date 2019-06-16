@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    hostname: hermes.grisk.online
+    nonSecurePort: 80
+    home-page-url: http://hermes.grisk.online
+    status-page-url: http://hermes.grisk.online/actuator/info
+    health-page-url: http://hermes.grisk.online/actuator/health
+  client:
+    serviceUrl:
+      defaultZone: http://zeus.grisk.online/eureka/
+management:
+  health:
+    ldap:
+      enabled: false
