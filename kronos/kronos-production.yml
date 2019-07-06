@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: apolo.grisk.online
+    hostname: kronos-grisk.herokuapp.com
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}/eureka/

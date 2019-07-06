@@ -13,7 +13,7 @@ eureka:
     health-page-url: http://www.grisk.online/actuator/health
   client:
     serviceUrl:
-      defaultZone: http://zeus.grisk.online/eureka/
+      defaultZone: http://kronos.grisk.online/eureka/
 management:
   health:
     ldap:

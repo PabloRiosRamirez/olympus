@@ -3,7 +3,7 @@ server:
     enabled: true
     excluded-user-agents:
     mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript
-    min-response-size: 2048
+    min-response-size: 1024
   port: 80
 eureka:
   instance:
@@ -14,7 +14,7 @@ eureka:
     health-page-url: http://localhost/actuator/health
   client:
     serviceUrl:
-      defaultZone: http://zeus.grisk.online/eureka/
+      defaultZone: http://kronos.grisk.online/eureka/
 management:
   health:
     ldap:
