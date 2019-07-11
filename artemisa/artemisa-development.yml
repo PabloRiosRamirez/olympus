@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    hostname: localhost
+    nonSecurePort: 80
+    home-page-url: ${eureka.instance.hostmane}:8070
+    status-page-url: https://${eureka.instance.hostmane}:8070/actuator/info
+    health-page-url: https://${eureka.instance.hostmane}:8070/actuator/health
+  client:
+    serviceUrl:
+      defaultZone: https://kronos-grisk.herokuapp.com/eureka/
+management:
+  health:
+    ldap:
+      enabled: false
