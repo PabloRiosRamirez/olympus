@@ -1,0 +1,29 @@
+server:
+  compression:
+    enabled: true
+    excluded-user-agents:
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript
+    min-response-size: 1024
+eureka:
+  instance:
+    hostname: www.grisk.online
+    nonSecurePort: 80
+    home-page-url: http://www.grisk.online
+    status-page-url: http://www.grisk.online/actuator/info
+    health-page-url: http://www.grisk.online/actuator/health
+  client:
+    serviceUrl:
+      defaultZone: http://kronos.grisk.online/eureka/
+management:
+  health:
+    ldap:
+      enabled: false
+spring:
+  jpa:
+    database: '{cipher}2e1d431be3c0244d79a2819292a9596346a49f9f58ffc49e7bdca5e890d5abe7'
+  datasource:
+    url: '{cipher}37c805134dd9306d7fef6ec1d4ae6c3c09e639a109ab1e285cbf808f00cb2212b933fdf6bf48a14bce1b260cd0997afb55567caec9cf28611a1afe96a8cd7c83c6ef5a39cbe2c6b16b57b9d849d03b6fdfcba52c8715d99a6fe9d8d12d335822'
+    username: '{cipher}ad3ab85c0f6055dbdd1ed8d8adeb9a0800ca1fd752d0e2d987c25d40db7cdde4'
+    password: '{cipher}c250176dc760ddc8e5aa1d644292957b9fd97e6e98ed1ec50ba910efa8b814198135e8a2f5a1b219ce42bbc24f9918406a0ce02428e98f5b7aa568a3fe1344877bcaf942f9cf1ff6f1d0196cbf931eb3261e84ed11a894e1d5987171d2ddba13'
+    platform: '{cipher}115ff7e253a52f8d4748aa1556923e7f91aa7f0dfd7843192c67979ca402eceb'
+    driver-class-name: '{cipher}ff45a9936c9bf89360a0a10e1868467873a5a2eaf9c4aceefd184ec013adf3a603b7ffe9d5b835c90ca49aedbf81c326'
