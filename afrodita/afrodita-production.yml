@@ -8,9 +8,9 @@ eureka:
   instance:
     hostname: www.grisk.online
     nonSecurePort: 80
-    home-page-url: http://www.grisk.online
-    status-page-url: http://www.grisk.online/actuator/info
-    health-page-url: http://www.grisk.online/actuator/health
+    homePageUrl: http://www.grisk.online
+    statusPageUrl: http://www.grisk.online/actuator/info
+    healthPageUrl: http://www.grisk.online/actuator/health
   client:
     serviceUrl:
       defaultZone: https://kronos-grisk.herokuapp.com/eureka/

@@ -9,9 +9,9 @@ eureka:
   instance:
     hostname: localhost
     nonSecurePort: 80
-    home-page-url: http://localhost
-    status-page-url: http://localhost/actuator/info
-    health-page-url: http://localhost/actuator/health
+    homePageUrl: http://localhost
+    statusPageUrl: http://localhost/actuator/info
+    healthPageUrl: http://localhost/actuator/health
   client:
     serviceUrl:
       defaultZone: https://kronos-qa.herokuapp.com/eureka/
