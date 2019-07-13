@@ -1,8 +1,3 @@
-logging:
-  level:
-    org:
-      springframework:
-        web: trace
 eureka:
   instance:
     hostname: kronos-qa.herokuapp.com
