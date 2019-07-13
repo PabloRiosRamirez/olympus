@@ -4,6 +4,7 @@ eureka:
     homePageUrl: https://kronos-qa.herokuapp.com
     statusPageUrl: https://kronos-qa.herokuapp.com/actuator/info
     healthPageUrl: https://kronos-qa.herokuapp.com/actuator/health
+    instanceId: ${eureka.instance.hostname}
   client:
     service-url:
       defaultZone: https://${eureka.instance.hostname}/eureka/
