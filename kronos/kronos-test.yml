@@ -6,9 +6,9 @@ logging:
 eureka:
   instance:
     hostname: kronos-qa.herokuapp.com
-    home-page-url: https://kronos-qa.herokuapp.com
-    status-page-url: https://kronos-qa.herokuapp.com/actuator/info
-    health-page-url: https://kronos-qa.herokuapp.com/actuator/health
+    homePageUrl: https://kronos-qa.herokuapp.com
+    statusPageUrl: https://kronos-qa.herokuapp.com/actuator/info
+    healthPageUrl: https://kronos-qa.herokuapp.com/actuator/health
   client:
     service-url:
       defaultZone: https://${eureka.instance.hostname}/eureka/
