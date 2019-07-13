@@ -1,9 +1,9 @@
 eureka:
   instance:
     hostname: kronos-qa.herokuapp.com
-    homePageUrl: https://kronos-qa.herokuapp.com
-    statusPageUrl: https://kronos-qa.herokuapp.com/actuator/info
-    healthPageUrl: https://kronos-qa.herokuapp.com/actuator/health
+    homePageUrl: https://${eureka.instance.hostname}
+    statusPageUrl: https://${eureka.instance.hostname}/actuator/info
+    healthPageUrl: https://${eureka.instance.hostname}/actuator/health
     instanceId: ${eureka.instance.hostname}
   client:
     service-url:
