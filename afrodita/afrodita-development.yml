@@ -14,7 +14,7 @@ eureka:
     health-page-url: http://localhost/actuator/health
   client:
     serviceUrl:
-      defaultZone: http://kronos.grisk.online/eureka/
+      defaultZone: https://kronos-qa.herokuapp.com/eureka/
 management:
   health:
     ldap:

@@ -3,6 +3,6 @@ eureka:
     hostname: kronos.grisk.online
   client:
     service-url:
-      defaultZone: http://kronos.grisk.online/eureka/
+      defaultZone: https://kronos-grisk.herokuapp.com/eureka/
     healthcheck:
       enabled: true
