@@ -6,11 +6,11 @@ server:
     min-response-size: 1024
 eureka:
   instance:
-    hostname: www.grisk.online
+    hostname: afrodita-qa.herokuapp.com
     nonSecurePort: 80
-    homePageUrl: http://www.grisk.online
-    statusPageUrl: http://www.grisk.online/actuator/info
-    healthPageUrl: http://www.grisk.online/actuator/health
+    homePageUrl: https://afrodita-qa.herokuapp.com
+    statusPageUrl: https://afrodita-qa.herokuapp.com/actuator/info
+    healthPageUrl: https://afrodita-qa.herokuapp.com/actuator/health
   client:
     serviceUrl:
       defaultZone: https://kronos-qa.herokuapp.com/eureka/

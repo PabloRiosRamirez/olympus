@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: artemisa-test.herokuapp.com
+    hostname: artemisa-qa.herokuapp.com
     nonSecurePort: 80
     homePageUrl: ${eureka.instance.hostmane}
     statusPageUrl: https://${eureka.instance.hostmane}/actuator/info
