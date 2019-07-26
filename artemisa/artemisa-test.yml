@@ -7,7 +7,7 @@ eureka:
     healthPageUrl: https://${eureka.instance.hostmane}/actuator/health
   client:
     serviceUrl:
-      defaultZone: https://kronos-test.herokuapp.com/eureka/
+      defaultZone: https://kronos-qa.herokuapp.com/eureka/
 management:
   health:
     ldap:
