@@ -1,9 +1,4 @@
 eureka:
-  instance:
-    hostname: localhost
-    homePageUrl: http://${eureka.instance.hostmane}:${server.port}
-    statusPageUrl: http://${eureka.instance.hostmane}:${server.port}/actuator/info
-    healthPageUrl: http://${eureka.instance.hostmane}:${server.port}/actuator/health
   client:
     serviceUrl:
       defaultZone: https://kronos-qa.herokuapp.com/eureka/
