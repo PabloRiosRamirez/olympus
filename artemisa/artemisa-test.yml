@@ -2,9 +2,9 @@ eureka:
   instance:
     hostname: artemisa-qa.herokuapp.com
     nonSecurePort: 80
-    homePageUrl: ${eureka.instance.hostmane}
-    statusPageUrl: https://${eureka.instance.hostmane}/actuator/info
-    healthPageUrl: https://${eureka.instance.hostmane}/actuator/health
+    homePageUrl: https://artemisa-qa.herokuapp.com
+    statusPageUrl: https://artemisa-qa.herokuapp.com/actuator/info
+    healthPageUrl: https://artemisa-qa.herokuapp.com/actuator/health
   client:
     serviceUrl:
       defaultZone: https://kronos-qa.herokuapp.com/eureka/
