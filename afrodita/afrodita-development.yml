@@ -8,6 +8,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: https://kronos-qa.herokuapp.com/eureka/
+    registerWithEureka: false
+    fetchRegistry: true
 management:
   health:
     ldap:
@@ -21,5 +23,3 @@ spring:
     password: '{cipher}5e906bc9607404ccfb8b5ebf43707be6a6343c84e2f0875c2b6c7d12af9a0f89548ac0cf23c0f431e4581ddffb0980b256a4bf540908f6a54397e452d0c01489d0b938b2e6b67636da2852d33a6b5392a40ce63ca5a1ccabd611763f4e5d78a2'
     platform: '{cipher}115ff7e253a52f8d4748aa1556923e7f91aa7f0dfd7843192c67979ca402eceb'
     driver-class-name: '{cipher}ff45a9936c9bf89360a0a10e1868467873a5a2eaf9c4aceefd184ec013adf3a603b7ffe9d5b835c90ca49aedbf81c326'
-    hikari:
-      maximum-pool-size: 10
