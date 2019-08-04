@@ -5,6 +5,8 @@ eureka:
     statusPageUrl: https://${eureka.instance.hostname}/actuator/info
     healthPageUrl: https://${eureka.instance.hostname}/actuator/health
     instanceId: ${eureka.instance.hostname}
+    leaseRenewalIntervalInSeconds: 2
+    leaseExpirationDurationInSeconds: 4
   client:
     service-url:
       defaultZone: https://${eureka.instance.hostname}/eureka/
