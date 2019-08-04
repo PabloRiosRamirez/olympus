@@ -8,6 +8,9 @@ eureka:
     leaseRenewalIntervalInSeconds: 2
     leaseExpirationDurationInSeconds: 4
   client:
+    client:
+      registerWithEureka: false
+      fetchRegistry: false
     service-url:
       defaultZone: https://${eureka.instance.hostname}/eureka/
     healthcheck:
