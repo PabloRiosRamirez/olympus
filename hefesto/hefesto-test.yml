@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    hostname: hefesto-qa.herokuapp.com
+    nonSecurePort: 80
+    homePageUrl: https://hefesto-qa.herokuapp.com
+    statusPageUrl: https://hefesto-qa.herokuapp.com/actuator/info
+    healthPageUrl: https://hefesto-qa.herokuapp.com/actuator/health
+  client:
+    serviceUrl:
+      defaultZone: https://kronos-qa.herokuapp.com/eureka/
+management:
+  health:
+    ldap:
+      enabled: false

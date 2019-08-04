@@ -1,0 +1,8 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://kronos-qa.herokuapp.com/eureka/
+management:
+  health:
+    ldap:
+      enabled: false
