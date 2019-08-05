@@ -1,8 +1,16 @@
 eureka:
   instance:
-    hostname: kronos.grisk.online
+    hostname: kronos-grisk.herokuapp.com
+    homePageUrl: https://${eureka.instance.hostname}
+    statusPageUrl: https://${eureka.instance.hostname}/actuator/info
+    healthPageUrl: https://${eureka.instance.hostname}/actuator/health
+    instanceId: ${eureka.instance.hostname}
+    leaseRenewalIntervalInSeconds: 2
+    leaseExpirationDurationInSeconds: 4
   client:
     service-url:
-      defaultZone: https://kronos-grisk.herokuapp.com/eureka/
+      defaultZone: https://${eureka.instance.hostname}/eureka/
     healthcheck:
       enabled: true
+    server:
+      enableSelfPreservation: false
