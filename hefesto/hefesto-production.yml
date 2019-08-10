@@ -2,7 +2,7 @@ eureka:
   instance:
     hostname: hefesto-grisk.herokuapp.com
     nonSecurePort: 80
-    instanceId: ${eureka.instance.hostname}
+    instanceId: ${eureka.instance.hostname}_${random.value}
     homePageUrl: https://hefesto-grisk.herokuapp.com
     statusPageUrl: https://hefesto-grisk.herokuapp.com/actuator/info
     healthPageUrl: https://hefesto-grisk.herokuapp.com/actuator/health

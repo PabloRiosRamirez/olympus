@@ -8,13 +8,15 @@ eureka:
   instance:
     hostname: afrodita-qa.herokuapp.com
     nonSecurePort: 80
-    instanceId: ${eureka.instance.hostname}
+    instanceId: ${eureka.instance.hostname}_${random.value}
     homePageUrl: https://afrodita-qa.herokuapp.com
     statusPageUrl: https://afrodita-qa.herokuapp.com/actuator/info
     healthPageUrl: https://afrodita-qa.herokuapp.com/actuator/health
   client:
     serviceUrl:
       defaultZone: https://kronos-qa.herokuapp.com/eureka/
+    registerWithEureka: false
+    fetchRegistry: true
 management:
   health:
     ldap:

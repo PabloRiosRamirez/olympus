@@ -2,7 +2,7 @@ eureka:
   instance:
     hostname: artemisa-grisk.herokuapp.com
     nonSecurePort: 80
-    instanceId: ${eureka.instance.hostname}
+    instanceId: ${eureka.instance.hostname}_${random.value}
     homePageUrl: https://artemisa-grisk.herokuapp.com
     statusPageUrl: https://artemisa-grisk.herokuapp.com/actuator/info
     healthPageUrl: https://artemisa-grisk.herokuapp.com/actuator/health

@@ -2,7 +2,7 @@ eureka:
   instance:
     hostname: atenea-qa.herokuapp.com
     nonSecurePort: 80
-    instanceId: ${eureka.instance.hostname}
+    instanceId: ${eureka.instance.hostname}_${random.value}
     homePageUrl: https://atenea-qa.herokuapp.com
     statusPageUrl: https://atenea-qa.herokuapp.com/actuator/info
     healthPageUrl: https://atenea-qa.herokuapp.com/actuator/health

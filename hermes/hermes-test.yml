@@ -2,7 +2,7 @@ eureka:
   instance:
     hostname: hermes-qa.herokuapp.com
     nonSecurePort: 80
-    instanceId: ${eureka.instance.hostname}
+    instanceId: ${eureka.instance.hostname}_${random.value}
     homePageUrl: https://hermes-qa.herokuapp.com
     statusPageUrl: https://hermes-qa.herokuapp.com/actuator/info
     healthPageUrl: https://hermes-qa.herokuapp.com/actuator/health
