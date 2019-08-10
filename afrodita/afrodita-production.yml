@@ -8,6 +8,7 @@ eureka:
   instance:
     hostname: www.grisk.online
     nonSecurePort: 80
+    instanceId: ${eureka.instance.hostname}
     homePageUrl: http://www.grisk.online
     statusPageUrl: http://www.grisk.online/actuator/info
     healthPageUrl: http://www.grisk.online/actuator/health

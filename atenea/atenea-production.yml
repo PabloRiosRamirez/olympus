@@ -2,6 +2,7 @@ eureka:
   instance:
     hostname: atenea-grisk.herokuapp.com
     nonSecurePort: 80
+    instanceId: ${eureka.instance.hostname}
     homePageUrl: https://atenea-grisk.herokuapp.com
     statusPageUrl: https://atenea-grisk.herokuapp.com/actuator/info
     healthPageUrl: https://atenea-grisk.herokuapp.com/actuator/health

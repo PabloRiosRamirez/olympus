@@ -2,6 +2,7 @@ eureka:
   instance:
     hostname: artemisa-qa.herokuapp.com
     nonSecurePort: 80
+    instanceId: ${eureka.instance.hostname}
     homePageUrl: https://artemisa-qa.herokuapp.com
     statusPageUrl: https://artemisa-qa.herokuapp.com/actuator/info
     healthPageUrl: https://artemisa-qa.herokuapp.com/actuator/health
