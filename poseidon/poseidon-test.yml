@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    hostname: poseidon-qa.herokuapp.com
+    nonSecurePort: 80
+    instanceId: ${eureka.instance.hostname}_${random.value}
+    homePageUrl: https://poseidon-qa.herokuapp.com
+    statusPageUrl: https://poseidon-qa.herokuapp.com/actuator/info
+    healthPageUrl: https://poseidon-qa.herokuapp.com/actuator/health
+  client:
+    serviceUrl:
+      defaultZone: https://kronos-qa.herokuapp.com/eureka/
+management:
+  health:
+    ldap:
+      enabled: false
