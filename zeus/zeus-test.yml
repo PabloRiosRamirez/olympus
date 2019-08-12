@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    hostname: zeus-qa.herokuapp.com
+    nonSecurePort: 80
+    instanceId: ${eureka.instance.hostname}_${random.value}
+    homePageUrl: https://zeus-qa.herokuapp.com
+    statusPageUrl: https://zeus-qa.herokuapp.com/actuator/info
+    healthPageUrl: https://zeus-qa.herokuapp.com/actuator/health
+  client:
+    serviceUrl:
+      defaultZone: https://kronos-qa.herokuapp.com/eureka/
+management:
+  health:
+    ldap:
+      enabled: false
